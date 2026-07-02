@@ -1,6 +1,6 @@
 # CTFlearn - Basic Injection
 
-![Imagem 1](ctf1-1.png)
+![Imagem 1](img1.png)
 
 Essa foi a primeira tela do desafio. Uma campo de *input* que devolve informações do banco de dados pela *query*
 
@@ -13,15 +13,15 @@ Digitando
 ```
 abcdefg' or '1'='1
 ```
-a *query* se torna
+A *query* se torna
 
 ```
 SELECT * FROM webfour.webfour where name = 'abcdefg' or '1'='1'
 ```
 
-Isso significa que o SQL procurará linhas com o nome abcdefg (não existe nenhuma) OU linhas aonde '1'='1' (todas as linhas). Assim, todos os campos do banco de dados serão vazados.
+Isso significa que o SQL procurará linhas com o nome abcdefg (não existe nenhuma) OU linhas onde '1'='1' (todas as linhas). Assim, todos os campos do banco de dados serão vazados.
 
-![Imagem 2](ctf1-2.png)
+![Imagem 2](img2.png)
 
 Isso é suficiente para achar a *flag*
 
