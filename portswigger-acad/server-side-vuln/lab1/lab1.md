@@ -29,3 +29,15 @@ Eu recebi a mensagem de *lab* concluído, porém eu não tinha realmente consegu
 ![Imagem 5](img5.png)
 
 Em cima, podemos ver uma resposta 200, que indica uma solicitação bem-sucedida, e abaixo, as informações do arquivo *passwd*.
+
+Obs.: *endpoint* é uma URL em um site que espera uma requisição GET para fazer alguma coisa. Por exemplo:
+
+```js
+server.get('/hello', function (req, res) {
+    res.send('Hello World!');
+});
+```
+
+Num *web server* feito com *Express.js*, eu criei o *endpoint /hello* que, ao receber uma requisição GET, ele devolve uma página com a mensagem *'Hello World!'*.
+
+![Imagem 6](img6.png)
